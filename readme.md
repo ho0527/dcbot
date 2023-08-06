@@ -1,6 +1,6 @@
 ## name: dcbot
-
 ## made by: 小賀chris
+## invite link: https://discord.com/api/oauth2/authorize?client_id=1136953396662915093&permissions=8&scope=bot
 
 ## version:
 ### Bata0.0.0 20230805
