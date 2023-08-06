@@ -1,0 +1,10 @@
+- 新增/lorem指令
+- 製作接收feedback的網頁
+20230806 todo list
+
+
+20230807 todo list
+
+
+
+- 製作網頁可以放這個的log的
