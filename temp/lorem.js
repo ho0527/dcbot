@@ -12,9 +12,11 @@ export default {
             return event.setName("type")
                 .setDescription("要生成的類型word、letter、sentence")
                 .setRequired(true)
-                .addChoice("單字","word")
-                .addChoice("字母","letter")
-                .addChoice("句子","sentence")
+                .addChoices(
+                    { name:"單字",value:"word" },
+                    { name:"字母",value:"letter" },
+                    { name:"句子",value:"sentence" },
+                )
         })
         .addIntegerOption(function(event){
             return event
@@ -29,7 +31,7 @@ export default {
 
             let lorem=["lorem","ipsum","dolor","sit","amet","consectetur","adipiscing","elit","sed","do","eiusmod","tempor","incididunt","ut","labore","et","dolore","magna","aliqua"]
 
-            let response="{"+time()+"} 完成生成Lorem文本!!"
+            let response="完成生成Lorem文本!!"
             for(let i=0;i<repeat;i=i+1){
                 setTimeout(function(){
                     if(type=="word"){
