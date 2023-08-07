@@ -4,7 +4,7 @@ import {db,query,time} from "../link.js"
 
 // lorem main START
 
-export default {
+export default{
     data: new SlashCommandBuilder()
         .setName("lorem")
         .setDescription("生成 Lorem Ipsum 文本")

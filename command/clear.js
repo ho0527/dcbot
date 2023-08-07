@@ -1,11 +1,11 @@
 import {SlashCommandBuilder} from "discord.js"
 import chalk from "chalk"
-import { setTimeout } from 'node:timers/promises'
+import {setTimeout} from 'node:timers/promises'
 import {db,query,time} from "../link.js"
 
 // clear main START
 
-export default {
+export default{
     data: new SlashCommandBuilder()
         .setName("clear")
         .setDescription("clear messages")

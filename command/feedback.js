@@ -3,7 +3,7 @@ import chalk from "chalk"
 import {db,query,time} from "../link.js"
 
 // feedback main START
-export default {
+export default{
     data: new SlashCommandBuilder()
         .setName("feedback")
         .setDescription("提供回饋意見")

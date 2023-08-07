@@ -4,7 +4,7 @@ import {db,query,time} from "../link.js"
 
 // help main START
 
-export default {
+export default{
     data: new SlashCommandBuilder()
         .setName("help")
         .setDescription("顯示機器人的指令列表"),
