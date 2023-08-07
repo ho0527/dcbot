@@ -27,10 +27,7 @@ export default {
             let type=event.options.getString("type")
             let repeat=event.options.getInteger("repeat")
 
-            let lorem=[
-                "lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit", "sed", "do", "eiusmod",
-                "tempor", "incididunt", "ut", "labore", "et", "dolore", "magna", "aliqua",
-            ]
+            let lorem=["lorem","ipsum","dolor","sit","amet","consectetur","adipiscing","elit","sed","do","eiusmod","tempor","incididunt","ut","labore","et","dolore","magna","aliqua"]
 
             let response="{"+time()+"} 完成生成Lorem文本!!"
             for(let i=0;i<repeat;i=i+1){
