@@ -18,12 +18,15 @@ export default {
         let count=event.options.getInteger("count")
 
         try{
-            event.reply({ content: `Successfully deleted ${count} messages.`, ephemeral: true })
-
+            await event.deferReply({ ephemeral: true })
             for(let i=0;i<count;i=i+1){
-                await (await event.channel.messages.fetch({ limit: 1 })).first().delete()
+                let message=await event.channel.messages.fetch({ limit: 1 })
+                if(message.size>0){
+                    await message.first().delete()
+                }else{ break }
                 await setTimeout(50)
             }
+            event.editReply({ content: `Successfully deleted ${count} messages.`, ephemeral: true })
         }catch(error){
             console.log(chalk.red("{"+time()+"} Error while deleting messages: "+error))
             event.reply("{"+time()+"} An error occurred while trying to delete messages.")
