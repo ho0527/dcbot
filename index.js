@@ -18,7 +18,7 @@ client.command=[]
 try{
     let data
     let promise=[]
-    let file=fs.readdirSync("./command").filter(function(event){ return event.endsWith(".js") })
+    let file=fs.readdirSync("./command").filter(function(event){ return event.endsWith(".js")/*||event.endsWith(".ts")*/ })
     let configdata=JSON.parse(fs.readFileSync("data.json"))
 
     console.log(chalk.green("{"+time()+"} Started refreshing application / commands."))

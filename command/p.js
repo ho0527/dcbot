@@ -1,9 +1,13 @@
-import {SlashCommandBuilder} from "discord.js"
+import {ChatInputCommandInteraction,PermissionsBitField,SlashCommandBuilder,TextChannel} from "discord.js"
 import {createAudioPlayer,createAudioResource,StreamType,joinVoiceChannel} from "@discordjs/voice"
 import chalk from "chalk"
 import { setTimeout } from "node:timers/promises"
 import {db,query,time} from "../link.js"
 import ytdl from "ytdl-core"
+
+// import {MusicQueue} from "../structs/MusicQueue.js"
+// import {Song} from "../structs/Song.js"
+// import {playlistPattern} from "../utils/patterns.js"
 
 let urllist=[]; // 存放音樂網址的陣列
 

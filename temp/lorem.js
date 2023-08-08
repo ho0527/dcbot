@@ -24,7 +24,7 @@ export default{
                 .setDescription("重複次數(1-20)")
                 .setRequired(true)
         }),
-    async execute(event) {
+    async execute(event){
         try{
             let type=event.options.getString("type")
             let repeat=event.options.getInteger("repeat")

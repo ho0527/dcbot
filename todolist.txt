@@ -1,5 +1,4 @@
 - 修正/lorem指令
-- 製作接收feedback的網頁
 - 新增/p指令 撥放音樂
 
 20230807 todo list
