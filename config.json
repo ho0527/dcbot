@@ -1,7 +1,7 @@
 {
     "MAX_PLAYLIST_SIZE": 10,
     "PRUNING": false,
-    "LOCALE": "zh_tw",
+    "language": "zh_tw",
     "DEFAULT_VOLUME": 70,
     "STAY_TIME": 30
 }

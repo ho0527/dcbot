@@ -11,7 +11,7 @@ export default{
         .setDescription("clear messages")
         .addIntegerOption(function(event){
             return event.setName("count")
-                .setDescription("Number of messages to delete(!!!You can only bulk delete messages that are under 14 days old.!!!)")
+                .setDescription("Number of messages to delete")
                 .setRequired(true)
         }),
     async execute(event){
