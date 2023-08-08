@@ -4,7 +4,7 @@ import {db,query,time} from "../link.js"
 
 // feedback main START
 export default{
-    data: new SlashCommandBuilder()
+    data:new SlashCommandBuilder()
         .setName("feedback")
         .setDescription("提供回饋意見")
         .addStringOption((option) =>

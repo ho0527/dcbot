@@ -73,6 +73,30 @@
     tslib "^2.6.1"
     ws "^8.13.0"
 
+"@distube/ytdl-core@^4.11.17":
+  version "4.11.17"
+  resolved "https://registry.yarnpkg.com/@distube/ytdl-core/-/ytdl-core-4.11.17.tgz#9dcfa87f929197f0f4782afdc40d9820f840f87c"
+  integrity sha512-XHRYxC9hR94GBxfy/SiGjnCbe7AuB1YqTAfD3CxOfdGkW5I2AXbDLHIVsjKLTUNHT3CkVvh3Q99SRM0T2cKdSw==
+  dependencies:
+    m3u8stream "^0.8.6"
+    miniget "^4.2.3"
+    sax "^1.2.4"
+    undici "^5.22.1"
+
+"@distube/ytpl@^1.1.1":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@distube/ytpl/-/ytpl-1.1.2.tgz#3df331cd5ad05248f89f0cbd339370bf57b4103c"
+  integrity sha512-fN4+w94x9Jdr/mFat7F2y94hepnZGdZsBDrP28SR/EE+uc9mw9N7CcAzqhITuPBZNELpcz1NvH2vLWpIIgGA+g==
+  dependencies:
+    miniget "^4.2.1"
+
+"@distube/ytsr@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@distube/ytsr/-/ytsr-1.1.9.tgz#963ed3deaed4394e1e7190acdbe5382931ec1a21"
+  integrity sha512-rFSQo9wQ51mfJcazik5xzQcQpnUEZhaDA9W/5F/4s6I+1FNEjLEwkS5fFhf5qgg2G69EYy0kzcnivKiPwRF+4A==
+  dependencies:
+    miniget "^4.2.2"
+
 "@sapphire/async-queue@^1.5.0":
   version "1.5.0"
   resolved "https://registry.npmjs.org/@sapphire/async-queue/-/async-queue-1.5.0.tgz"
@@ -252,6 +276,19 @@ discord.js@^14.12.1:
     tslib "^2.6.1"
     undici "^5.22.1"
     ws "^8.13.0"
+
+distube@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/distube/-/distube-4.0.6.tgz#9df6bb0902fe8f709613c867ebb025ba970ab272"
+  integrity sha512-FVnooKpiTkbd8rFXH5rdGABnZCuLDbOsXkj6UCvyateG5gNAI7xGmmcugV+3kC21rmQlgD8jOLMv+uugESgGKA==
+  dependencies:
+    "@distube/ytdl-core" "^4.11.17"
+    "@distube/ytpl" "^1.1.1"
+    "@distube/ytsr" "^1.1.9"
+    prism-media "npm:@distube/prism-media@latest"
+    tiny-typed-emitter "^2.1.0"
+    tslib "^2.6.1"
+    undici "^5.22.1"
 
 dotenv@^16.3.1:
   version "16.3.1"
@@ -475,7 +512,7 @@ mime@1.6.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
-miniget@^4.2.2:
+miniget@^4.2.1, miniget@^4.2.2, miniget@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/miniget/-/miniget-4.2.3.tgz#3707a24c7c11c25d359473291638ab28aab349bd"
   integrity sha512-SjbDPDICJ1zT+ZvQwK0hUcRY4wxlhhNpHL9nJOB2MEAXRGagTljsO8MEDzQMTFf0Q8g4QNi8P9lEm/g7e+qgzA==
@@ -557,6 +594,11 @@ prism-media@^1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/prism-media/-/prism-media-1.3.5.tgz#ea1533229f304a1b774b158de40e98c765db0aa6"
   integrity sha512-IQdl0Q01m4LrkN1EGIE9lphov5Hy7WWlH6ulf5QdGePLlPas9p2mhgddTEHrlaXYjjFToM1/rWuwF37VF4taaA==
+
+"prism-media@npm:@distube/prism-media@latest":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@distube/prism-media/-/prism-media-1.0.0.tgz#96fefb15c9e748bbed4371aefd07e2252b40e39d"
+  integrity sha512-UII2uqFH95uMPg4Z9yOJU3KJpb5vnrELBFXQYFhlBlk3GZ5wwDtt9fmR35PcqbqtnYGdtmUCCMucaSUeVlWrmw==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -690,6 +732,11 @@ string_decoder@~1.1.1:
   integrity sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
   dependencies:
     safe-buffer "~5.1.0"
+
+tiny-typed-emitter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tiny-typed-emitter/-/tiny-typed-emitter-2.1.0.tgz#b3b027fdd389ff81a152c8e847ee2f5be9fad7b5"
+  integrity sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==
 
 toidentifier@1.0.1:
   version "1.0.1"

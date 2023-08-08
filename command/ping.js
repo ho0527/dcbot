@@ -4,7 +4,7 @@ import {db,query,time} from "../link.js"
 // ping main START
 
 export default{
-    data: new SlashCommandBuilder()
+    data:new SlashCommandBuilder()
         .setName("ping")
         .setDescription("clear messages"),
 	async execute(event){

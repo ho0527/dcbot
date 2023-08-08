@@ -36,11 +36,6 @@ class Music {
         this.dispatcher = {};
     }
 
-    // 取得指令列表
-    command(interaction) {
-        interaction.reply({ content: `【播放音樂】/play url:音樂網址\n【暫停播放】/pause\n【恢復播放】/resume\n【跳過這首歌曲】/skip\n【查看歌曲隊列】/queue\n【刪除播放清單中的所有歌曲】/deleteplaylist id:id\n【查看機器人指令】/command\n【讓機器人離開語音頻道（會清空歌曲隊列）】/leave` });
-    }
-
     // 判斷網址是否為播放清單
     isPlayList(url) {
         if (url.indexOf('&list') > -1 && url.indexOf('music.youtube') < 0) {

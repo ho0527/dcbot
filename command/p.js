@@ -32,7 +32,7 @@ async function playMusic(guild){
 }
 
 export default{
-    data: new SlashCommandBuilder()
+    data:new SlashCommandBuilder()
         .setName("p")
         .setDescription("play music")
         .addStringOption(function(event){

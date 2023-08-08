@@ -19,7 +19,7 @@ try{
     let data
     let promise=[]
     let file=fs.readdirSync("./command").filter(function(event){ return event.endsWith(".js") })
-    let configdata=JSON.parse(fs.readFileSync("config.json"))
+    let configdata=JSON.parse(fs.readFileSync("data.json"))
 
     console.log(chalk.green("{"+time()+"} Started refreshing application / commands."))
 
@@ -42,7 +42,7 @@ try{
         }
         configdata.guild=guild
         configdata.command=client.command
-        fs.writeFileSync("config.json",JSON.stringify(configdata,null,2))
+        fs.writeFileSync("data.json",JSON.stringify(configdata,null,2))
     })
 
     // use slash command
@@ -75,3 +75,5 @@ client.once(Events.ClientReady,function(event){
 })
 
 client.login(TOKEN)
+
+export default client

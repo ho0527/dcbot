@@ -6,7 +6,7 @@ import {db,query,time} from "../link.js"
 // clear main START
 
 export default{
-    data: new SlashCommandBuilder()
+    data:new SlashCommandBuilder()
         .setName("clear")
         .setDescription("clear messages")
         .addIntegerOption(function(event){
