@@ -1,5 +1,10 @@
 {
+    "name": "chrisbot",
+    "version": "Bata1.0.3",
     "type": "module",
+    "scripts": {
+        "start": "node index.js"
+    },
     "dependencies": {
         "@discordjs/voice": "^0.16.0",
         "chalk": "^5.3.0",
@@ -17,8 +22,5 @@
         "typescript": "^5.1.6",
         "youtube-sr": "^4.3.4",
         "ytdl-core": "^4.11.5"
-    },
-    "scripts": {
-        "run": "node index.js"
     }
 }
