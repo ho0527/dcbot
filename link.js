@@ -1,5 +1,5 @@
 import chalk from "chalk"
-import mysql from "mysql"
+import mysql from "mysql2"
 
 let db
 

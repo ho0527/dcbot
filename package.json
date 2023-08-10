@@ -3,7 +3,8 @@
     "version": "Bata1.0.3",
     "type": "module",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "clear": "node delall.js"
     },
     "dependencies": {
         "@discordjs/voice": "^0.16.0",
