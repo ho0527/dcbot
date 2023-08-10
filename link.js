@@ -1,17 +1,24 @@
 import chalk from "chalk"
 import mysql from "mysql"
 
-// 建立 MySQL 連線
-let db=mysql.createConnection({ host:"localhost",database:"dcbot",user:"root",password:"" })
+let db
 
-// 連線至 MySQL
-db.connect(function(event){
-    if(!event){
-        console.log(chalk.green("{"+time()+"} 連線至MySQL success!"))
-    }else{
-        console.log(chalk.red("{"+time()+"} 無法連線至 MySQL "+event))
-    }
-})
+try{
+    // 建立 MySQL 連線
+    db=mysql.createPool({ host:"localhost",database:"dcbot",user:"root",password:"" })
+
+    // 連線至 MySQL
+    db.getConnection(function(event,connection){
+        if(!event){
+            console.log(chalk.green("{"+time()+"} 連線至MySQL success!"))
+            connection.release()
+        }else{
+            console.log(chalk.red("{"+time()+"} 無法連線至 MySQL "+event))
+        }
+    })
+}catch(error){
+    console.log("{"+time()+"} [ERROR]link connect error!"+error)
+}
 
 export { db }
 
