@@ -4,7 +4,6 @@ import {setTimeout} from 'node:timers/promises'
 import {db,query,time} from "../link.js"
 
 // clear main START
-
 export default{
     data:new SlashCommandBuilder()
         .setName("clear")

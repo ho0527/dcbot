@@ -14,7 +14,6 @@ let client=new Client({ intents:[GatewayIntentBits.Guilds] })
 client.command=[]
 
 // main start
-
 try{
     let data
     let promise=[]
@@ -66,7 +65,8 @@ try{
 
     console.log(chalk.green("{"+time()+"} Successfully reloaded "+file.length+" application (/) commands."))
 }catch(error){
-    console.log(chalk.red("{"+time()+"} "+error+" [index.js: 72]"))
+    console.log(chalk.red("{"+time()+"} "))
+    console.log(error)
 }
 
 // 成功回應

@@ -20,8 +20,7 @@ export default{
                 )
         })
         .addIntegerOption(function(event){
-            return event
-                .setName("repeat")
+            return event.setName("repeat")
                 .setDescription("重複次數(1-100)")
                 .setRequired(true)
         }),
